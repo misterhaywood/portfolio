@@ -1,11 +1,17 @@
+@font-face {
+  font-family: theFont;
+  src: url(rsrc/GraphikRegular.otf);
+}
+
 body {
-  background-color: orangered;
-  color: whitesmoke;
+  font-family: theFont;
+  background-color: gainsboro;
+  color: orangered;
 }
 
 a {
   margin: 0 8px;
-  color: whitesmoke;
+  color: orangered;
 }
 
 a, .caps {
@@ -13,7 +19,7 @@ a, .caps {
 }
 
 .zero { grid-area: zero; }
-.first { grid-area: first; }
+.first { grid-area: first;}
 .second { grid-area: second; }
 .third { grid-area: third; }
 .fourth { grid-area: fourth; }
@@ -37,7 +43,7 @@ a, .caps {
   display: flex;
   align-items: center;
   justify-content: center;
-  border: 1px solid aqua;
+  border: 1px solid gainsboro;
 }
 
 .box {
@@ -45,6 +51,24 @@ a, .caps {
   width: 200px;
   height: 200px;
   background-color: lightgreen;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 199px;
+}
+
+.box a {
+  color: darkblue;
+  
+}
+
+.blackbox {
+  display: block;
+  width: 200px;
+  height: 200px;
+  text-align: center;
+  vertical-align: middle;
+  line-height: 199px;
+  background-color: black;
 }
 
 @media (max-width: 576px) {
@@ -63,3 +87,4 @@ a, .caps {
       "ninth";
   }
 }
+
